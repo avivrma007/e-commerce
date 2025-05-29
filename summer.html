@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/testing3.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Shop<span>Now</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="/new project/testing3.html">HOME</a></li>
+            <li><a href="#summer">SUMMER WEAR</a></li>
+            <li><a href="#winter">WINTER WEAR</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+            
+            <!-- Cart Dropdown -->
+            <div class="cart-dropdown">
+                <div class="cart-items">
+                    <!-- Cart items will be added here dynamically -->
+                    <div class="empty-cart">Your cart is empty</div>
+                </div>
+                <div class="cart-total">Total: $0.00</div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+        
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <div class="slider">
+      <!--Radio buttons for manual control -->
+      <input type="radio" name="radio-btn" id="radio1" checked>
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!-- Slides -->
+  <div class="slides">
+    <div class="slide">
+      <img src="/img/gemini-img3-1.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="/img/gemini-img3-02.jpg" alt="Slide 2">
+    </div>
+    <div class="slide">
+      <img src="/img/gemini-img3-1.jpg" alt="Slide 3">
+    </div> 
+    <div class="slide">
+      <img src="/img/gemini-img3-02.jpg" alt="Slide 4">
+    </div>
+  </div>
+  <!-- Navigation buttons -->
+  <div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+</div>
+<br>
+<div class="heading">
+<h1>NEW COLLECTION</h1>
+</div>
+    <!-- Product Cards -->
+    <div class="products">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-tshirt-1.jpg" alt="Product 1" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">T-shirt - Red & Black</h3>
+                <p class="product-description"> T-shirt for boys , color- red/black , fabric- 100 % cotton</p>
+                <div class="product-price">$30.99</div>
+                <button class="add-to-cart" data-id="1" data-name=" T-shirt, red/black" data-price="30.99" data-image="/img/gemini-img-tshirt-1.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-tshirt-2.jpg" alt="Product 2" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">T-shirt - Green</h3>
+                <p class="product-description">T-shirt for boys, color- green, fabric- 100 % cotton</p>
+                <div class="product-price">$40.99</div>
+                <button class="add-to-cart" data-id="2" data-name="T-shirt, green" data-price="40.99" data-image="/img/gemini-img-tshirt-2.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-tshirt-3.jpg" alt="Product 3" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">T-shirt - brown-white-black</h3>
+                <p class="product-description">T-shirt for boys, color- brown-white-black, fabric- 100 % cotton</p>
+                <div class="product-price">$50.99</div>
+                <button class="add-to-cart" data-id="3" data-name="T-shirt, brown-white-black" data-price="50.99" data-image="/img/gemini-img-tshirt-3.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-tshirt-4.jpg" alt="Product 4" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">T-shirt - gray-yellow</h3>
+                <p class="product-description">T-shirt for boys, color- gray-yellow, fabric- 100 % cotton</p>
+                <div class="product-price">$49.99</div>
+                <button class="add-to-cart" data-id="4" data-name="Tshirt, gray-yellow" data-price="49.99" data-image="/img/gemini-img-tshirt-4.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <br>
+<div class="heading">
+<h1>SUMMER WEAR</h1>
+</div>
+    <!-- Product Cards -->
+    <div class="products">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-shirt-5.jpg" alt="Product 5" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Shirt - (flower print)</h3>
+                <p class="product-description">Shirt for boys, color- blue-white, fabric- 100 % cotton</p>
+                <div class="product-price">$60</div>
+                <button class="add-to-cart" data-id="5" data-name="Shirt, blue-flower print" data-price="60" data-image="/img/gemini-img-shirt-5.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-shorts.jpg" alt="Product 6" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Shorts - (flower print)</h3>
+                <p class="product-description">Shorts for boys, color- blue-white, fabric- 100 % cotton</p>
+                <p class="product-description"></p>
+                <div class="product-price">$40.99</div>
+                <button class="add-to-cart" data-id="6" data-name="Shorts, blue-flower print" data-price="40.99" data-image="/img/gemini-img-shorts.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-shirt-6.jpg" alt="Product 7" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Shirt - (flower print)</h3>
+                <p class="product-description">Shirt for boys, color- red-white, fabric- 100 % cotton</p>
+                <div class="product-price">$60</div>
+                <button class="add-to-cart" data-id="7" data-name="Shirt, red-flower print" data-price="60" data-image="/img/gemini-img-shirt-6.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-shorts-2.jpg" alt="Product 8" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Shorts - (flower print)</h3>
+                <p class="product-description">Shorts for boys, color- red-white, fabric- 100 % cotton</p>
+                <div class="product-price">$40.99</div>
+                <button class="add-to-cart" data-id="8" data-name="Shorts, red-flower print" data-price="40.99" data-image="/img/gemini-img-shorts-2.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <br>
+<div class="heading">
+<h1>WINTER WEAR</h1>
+</div>
+    <!-- Product Cards -->
+    <div class="products">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-jacket-1.jpg" alt="Product 9" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Jacket - green</h3>
+                <p class="product-description">Jacket for boys, color- dark green, fabric- nylon & polyster</p>
+                <div class="product-price">$99.99</div>
+                <button class="add-to-cart" data-id="9" data-name="Jacket, dark green" data-price="99.99" data-image="/img/gemini-img-jacket-1.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-jacket-2.jpg" alt="Product 10" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Jacket - brown-white</h3>
+                <p class="product-description">Jacket for boys, color- brown-white, fabric- nylon & polyster</p>
+                <div class="product-price">$149.99</div>
+                <button class="add-to-cart" data-id="10" data-name="Jacket, brown-white" data-price="149.99" data-image="/img/gemini-img-jacket-2.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-jacket-3.jpg" alt="Product 11" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Jacket - blue-white</h3>
+                <p class="product-description">Jacket for boys, color- blue-white, fabric- nylon & polyster</p>
+                <div class="product-price">$99.99</div>
+                <button class="add-to-cart" data-id="11" data-name="Jacket, blue-white" data-price="99.99" data-image="/img/gemini-img-jacket-3.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-jacket-4.jpg" alt="Product 12" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Jacket- black-white</h3>
+                <p class="product-description">Jacket for boys, color- black-white, fabric- nylon & polyster</p>
+                <div class="product-price">$120.50</div>
+                <button class="add-to-cart" data-id="12" data-name="Jacket- black-white" data-price="120.50" data-image="/img/gemini-img-jacket-4.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <br>
+<div class="heading">
+<h1>ACCESSORIES</h1>
+</div>
+    <!-- Product Cards -->
+    <div class="products">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-watch-1.jpg" alt="Product 13" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Watch - black</h3>
+                <p class="product-description">Watch for men, color- black, item weight- 230gm</p>
+                <div class="product-price">$60</div>
+                <button class="add-to-cart" data-id="13" data-name="Watch, black" data-price="60" data-image="/img/gemini-img-watch-1.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-sunglasses-1.jpg" alt="Product 14" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Sunglasses - z black</h3>
+                <p class="product-description">Sunglasses for men, color- z black, item weight- 150gm</p>
+                <div class="product-price">$99.80</div>
+                <button class="add-to-cart" data-id="14" data-name="watch, z black" data-price="99.80" data-image="/img/gemini-img-sunglasses-1.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-watch-2.jpg" alt="Product 15" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">watch- royal black</h3>
+                <p class="product-description">Watch for men, color- royal black, item weight- 260gm</p>
+                <div class="product-price">$110.29</div>
+                <button class="add-to-cart" data-id="15" data-name="Watch, royal black" data-price="110.29" data-image="/img/gemini-img-watch-2.jpg">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="/img/gemini-img-sunglasses-2.jpg" alt="Product 16" class="product-image">
+            <div class="product-info">
+                <h3 class="product-title">Sunglasses - royal black</h3>
+                <p class="product-description">Sunglasses for men, color- royal black, item weight- 160gm</p>
+                <div class="product-price">$99.99</div>
+                <button class="add-to-cart" data-id="16" data-name="Watch, royal black" data-price="99.99" data-image="/img/gemini-img-sunglasses-2.jpg">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="foter">
+   <h3><foter> This is foter </foter></h3>
+   </div>
+    <script src="/js/testing3.js"></script>
+</body>
+</html>
