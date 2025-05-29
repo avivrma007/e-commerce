@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/testing3.css">
+    <link rel="stylesheet" href="css/contect.css">
+</head>
+<body>
+            <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">Shop<span>Now</span></a>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <div class="dropdown">
+            <li><a href="#summer">SUMMER WEAR</a></li>
+            <div class="dropdown-content">
+                <a href="shirt.html">Shirt</a>
+                <a href="polo-s.html">Polo-shirt</a>
+                <a href="t-shirt.html">T-shirt</a>
+                <a href="lower.html">Lower</a>
+            </div>
+            </div>
+<div class="dropdown">
+            <li><a href="#winter">WINTER WEAR</a></li>
+            <div class="dropdown-content">
+                <a href="jacket.html">Jacket</a>
+                <a href="sweat-s.html">Sweat shirt</a>
+                <a href="warm-lower.html">Warm lower</a>
+                <a href="sweater.html">Sweater</a>
+            </div>
+            </div>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+            
+            <!-- Cart Dropdown -->
+            <div class="cart-dropdown">
+                <div class="cart-items">
+                    <!-- Cart items will be added here dynamically -->
+                    <div class="empty-cart">Your cart is empty</div>
+                </div>
+                <div class="cart-total">Total: $0.00</div>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+        
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiA
+dHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nz
+c3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABgcCBAUBA//EADwQAAICAQIEAQkFBAsAAAAAA
+AABAgMEBREGEiExQRNRUnGBkaHB0RQiQnPwNWGx8SMyM0NTYmNyotLh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFhEBAQEAAAAAAAAAAAAAA
+AAAAAER/9oADAMBAAIRAxEAPwC8QAAAAA+GZlU4WPO/ImoVwW7bPuyBcZ6hLI1D7HGX9FRtuvPPb9fEDX1riHK1KUq626MX/DT6yX+b6HGANYgAA
+NnAz8rT7PKYl0oPxXeMvWiU4fGdb5Y5uLKD7Odck17v5kNAwWthZmPnUq7FtjZB+K8P3PzGwVfo2p26XmRurbdb6Ww9KP1LNpshdVC2uXNCcVKLX
+in2MqzAAAAAAAAAAAAAGVTqUnPUsub7yvm/+TLWKu1qp06vmVtbbXSa9Te6+DLBpAAqAAAAAAWFwde7tDrjJ7uqcq/Yuq+DK9J9wPBx0Ry26Tuk18
+F8iVUgABAAAAAAAAAAABlfcaVqvXG1/eVRk/X1XyLAk1GLb7LuV9xfkU5mfRk4tisqnjpKS86lLcsHDABUAAAAAHhZfDCS0HE2W28W/iytSx+GMii
+elY+PXYpW1VRdkV+HmW6IOuACKAAAAAAAAAADySTTT7MqnPoli5t+NLp5KySXq8H7ti1yvuM6PJa3KaXS2uM/l8iwcIAFQAAAAACc8C4vk9OtyJLrd
+Zsv9q/93IK+i3LS0Sn7PpOJU001THdPwbW7+JFboAIAAAAAAAAAAAHM17Ax8vBustqjO2qmbrk+8XynTMbIKcJQfVSTTAqI9M76ZY99lM0+auTg/YY
+GkAAAAAHb4RwqM7U5wya1ZXGly2fn5lt/FlhJbdiIcA473y8prp0ri/i/kTAzVAAAAAAAAAAAAAAAAQzjPSHGx6lRH7sklckuz8JEULM4j/Yeb+Uysz
+UQAAA+uLjW
+5eRDHx481k3sl9T5Hd4K/bkfypfIUTbSsCvTsGrGr68q+9L0peLNsAyoAAAAAAAAAAAPNzC/Ipx4c99sK4+eckkB9Dw4GbxXp2PzKlyyZ/6a2XvZG9S
+4nz81OEJLHqf4an1frf0LgkPFes4tWFfgwkrMiyPK4xfSHrfyIIAWIAAAdHh/UK9M1OGRdGUocrhLl7rfxOcALYxcqnLpjdj2Rsrl2lFn2Kows3Jwbf
+KYl0qpeO3Z+teJJsDjLooahjv8yn/q/qZVMQc/D1rTszZUZdfN6Enyy9zN/cD0AAAABjOUYRcpNKK6tt7JEe1Hi7Dx24YkHlT9KL2gvb4+w4vFusWZW
+XZhUyax6nyy2f8AaS8d/wByI8XB2MzibVMlvluVEX4VR2fv7nJtsndNztnOcvSlLdmIKgAAAAAAAAAAAAAG3iannYe32bKtgl+Hm3j7n0NQASfB4yyINR
+zqIWxX46/uv3dv4Ep03VsPUo74tqcl/Wg+ko+wq8zputx7Y20WSrsi94yj3RFW2Dl6HqcdS0+F82o2buM479mv1uCCtpyc5ynJ7uTcn62eAGkAAAAAAAA
+AAAAAAAAAAAAAGxjZt+LBwqm4pvd7PxPTWAwAAAAAAAAAAAAAAAAAAAAAAAAAAB//2Q==" alt="img" class="profile-img">
+            <h1>ABHINAV VERMA</h1>
+            <p class="title">Web Developer</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> abhimojowalia@gamil.com </p>
+                <p><i class="fas fa-phone"></i>+91 6288060937</p>
+                <p><i class="fas fa-map-marker-alt"></i> punjab</p>
+                <p><i class="fas fa-globe"></i> www.abhinav.com</p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Fresh BCA graduate with hands-on experience in live web development projects. Passionate about building responsive websites using HTML, CSS, and JavaScript. Expanding skills in graphic design and video editing to create visually compelling digital experiences. Quick learner with strong problem-solving abilities, currently enhancing technical expertise through practical project work. Seeking opportunities to contribute creativity and newly acquired technical skills to web development and design projects.
+
+</p>
+        </section>
+
+        <!-- <section>
+            <h2>Work Experience</h2>
+            <div class="job">
+                <h3>Senior Web Developer</h3>
+                <p class="date">ABC Tech Inc. | Jan 2020 - Present</p>
+                <ul>
+                    <li>Lead a team of 5 developers to create enterprise-level web applications</li>
+                    <li>Implemented React.js and Node.js to improve application performance by 40%</li>
+                    <li>Developed RESTful APIs that served over 1 million monthly requests</li>
+                    <li>Mentored junior developers and conducted code reviews</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Web Developer</h3>
+                <p class="date">XYZ Solutions | Jun 2017 - Dec 2019</p>
+                <ul>
+                    <li>Developed and maintained 15+ client websites using WordPress and custom PHP</li>
+                    <li>Created responsive designs that increased mobile traffic by 35%</li>
+                    <li>Integrated third-party APIs including payment gateways and social media platforms</li>
+                </ul>
+            </div>
+        </section> -->
+
+        <section>
+            <h2>Education</h2>
+            <div class="education">
+                <h3>Bachelor of Computer Application</h3>
+                <p class="date">Gov. Shivalik College (naya nangal, punjab) | 2021 - 2023</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Video editor</span>
+                <span class="skill">Git</span>
+                <span class="skill">Responsive Design</span>
+                <span class="skill">Editing</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <div class="job">
+                <h3>E-commerce Platform</h3>
+                <ul>
+                    <li>Developed a full-stack e-commerce solution with React, Node.js, and MongoDB</li>
+                    <li>Implemented payment processing with Stripe API</li>
+                    <li>Reduced page load time by optimizing images and lazy loading components</li>
+                </ul>
+            </div>
+            <!-- <div class="job">
+                <h3>Task Management App</h3>
+                <ul>
+                    <li>Created a collaborative task management application with real-time updates</li>
+                    <li>Used Firebase for authentication and database functionality</li>
+                    <li>Implemented drag-and-drop functionality for task organization</li>
+                </ul>
+            </div> -->
+        </section>
+       <!-- <footer>
+            <p>References available upon request</p>
+        </footer> -->
+    </div>
+</body>
+</html>
